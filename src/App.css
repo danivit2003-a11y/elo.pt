@@ -2458,3 +2458,60 @@
   top: 30px;
   right: 30px;
 }
+/* ================================
+   AJUSTE DOS CAMPOS DE PESQUISA
+================================ */
+
+.search-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 0;
+}
+
+/* O que precisas? — mais espaço */
+.search-box .search-field:first-child {
+  min-width: 0;
+}
+
+/* Onde? — ligeiramente mais estreito */
+.search-box .location-field {
+  min-width: 0;
+}
+
+/* Linha divisória entre os dois campos */
+.search-box .search-divider {
+  position: absolute;
+  left: 60%;
+  top: 20px;
+  bottom: 20px;
+  width: 1px;
+  height: auto;
+  margin: 0;
+  background: #e7e4de;
+}
+
+/* Botão ocupa toda a largura */
+.search-box .search-button {
+  grid-column: 1 / -1;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+  .search-box {
+    display: block;
+  }
+
+  .search-box .search-divider {
+    position: static;
+    width: auto;
+    height: 1px;
+    margin: 0 16px;
+  }
+
+  .search-box .search-button {
+    width: 100%;
+  }
+
+}
