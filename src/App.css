@@ -210,87 +210,94 @@
   
   
   /* =========================
-     SEARCH
-     ========================= */
-  
-  .search-box {
-    width: min(650px, 100%);
-    padding: 10px;
-    border: 1px solid #d7d4ce;
-    border-radius: 18px;
-    background: white;
-    box-shadow: 0 12px 40px rgba(30, 30, 25, 0.07);
-  }
-  
-  .search-field {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    padding: 15px 16px;
-  }
-  
-  .search-field > div {
-    flex: 1;
-  }
-  
-  .search-icon,
-  .location-icon {
-    font-size: 20px;
-    color: #67636a;
-  }
-  
-  .search-field label {
-    display: block;
-    margin-bottom: 3px;
-    font-size: 12px;
-    font-weight: 700;
-    color: #464148;
-  }
-  
-  .search-field input {
-    width: 100%;
-    padding: 0;
-    border: 0;
-    outline: none;
-    background: transparent;
-    font-size: 15px;
-    color: var(--black);
-  }
-  
-  .search-field input::placeholder {
-    color: #a19da2;
-  }
-  
-  .search-divider {
-    height: 1px;
-    margin: 0 16px;
-    background: #e7e4de;
-  }
-  
-  .search-button {
-    width: 100%;
-    margin-top: 7px;
-    padding: 15px 20px;
-    border: 0;
-    border-radius: 12px;
-    background: var(--black);
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    transition: 0.2s ease;
-  }
-  
-  .search-button:hover {
-    background: #353535;
-  }
-  
-  .search-button span {
-    font-size: 18px;
-  }
+   SEARCH
+   ========================= */
+
+.search-box {
+  position: relative;
+  width: min(650px, 100%);
+  padding: 10px;
+  border: 1px solid #d7d4ce;
+  border-radius: 18px;
+  background: white;
+  box-shadow: 0 12px 40px rgba(30, 30, 25, 0.07);
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 15px 16px;
+}
+
+.search-field > div {
+  flex: 1;
+}
+
+.search-icon,
+.location-icon {
+  font-size: 20px;
+  color: #67636a;
+}
+
+.search-field label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #464148;
+}
+
+.search-field input {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: var(--black);
+}
+
+.search-field input::placeholder {
+  color: #a19da2;
+}
+
+/* DIVISÃO ENTRE OS DOIS CAMPOS */
+.search-divider {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 1px;
+  height: 72px;
+  margin: 0;
+  background: #e7e4de;
+}
+
+/* BOTÃO */
+.search-button {
+  width: 100%;
+  margin-top: 7px;
+  padding: 15px 20px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--black);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  transition: 0.2s ease;
+}
+
+.search-button:hover {
+  background: #353535;
+}
+
+.search-button span {
+  font-size: 18px;
+}
   
   .hero-professional {
     display: flex;
