@@ -2522,3 +2522,33 @@
   }
 
 }
+/* =========================
+   CORREÇÃO SEARCH BOX
+   ========================= */
+
+   .search-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+  }
+  
+  .search-field {
+    min-width: 0;
+  }
+  
+  /* Separador apenas entre "O que precisas?" e "Onde?" */
+  .search-field:first-child {
+    border-right: 1px solid #e7e4de;
+  }
+  
+  /* Remove completamente o elemento que estava a criar o risco */
+  .search-divider {
+    display: none !important;
+  }
+  
+  /* O botão ocupa toda a largura e fica abaixo dos campos */
+  .search-button {
+    grid-column: 1 / -1;
+    width: 100%;
+    margin-top: 7px;
+  }
