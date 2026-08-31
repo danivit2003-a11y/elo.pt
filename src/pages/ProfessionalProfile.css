@@ -1,0 +1,370 @@
+.professional-profile-page {
+  min-height: 100vh;
+  background: #f8f7f4;
+  color: #17201f;
+}
+
+/* HEADER */
+
+.profile-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 40px;
+}
+
+.profile-header-top {
+  position: relative;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* SETA PARA TRÁS — ESQUERDA */
+
+.profile-header .back-button {
+  position: static;
+  flex-shrink: 0;
+}
+
+/* LOGO — DIREITA */
+
+.profile-header .auth-logo {
+  position: static;
+  font-size: 42px;
+  font-weight: 700;
+  color: #174f49;
+  text-decoration: none;
+  line-height: 1;
+  margin-left: auto;
+}
+
+.profile-header .auth-logo span {
+  color: #aa3bff;
+}
+
+/* CONTEÚDO */
+
+.professional-profile-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 40px 100px;
+}
+
+/* INTRO */
+
+.profile-intro {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-bottom: 55px;
+  border-bottom: 1px solid #ddd9d1;
+}
+
+.profile-avatar-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: #e3e0d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.profile-intro-info {
+  flex: 1;
+}
+
+.profile-verified {
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  font-weight: 700;
+  color: #52756f;
+}
+
+.profile-intro h1 {
+  margin: 10px 0 4px;
+  font-size: 52px;
+  letter-spacing: -0.045em;
+}
+
+.profile-service {
+  margin: 0 0 8px;
+  font-size: 19px;
+  color: #626c6d;
+}
+
+.profile-location {
+  margin: 0;
+  color: #727b7c;
+}
+
+.profile-rating {
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.profile-rating strong {
+  color: #b4773c;
+}
+
+.profile-rating span {
+  color: #737b7c;
+}
+
+.profile-favorite {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #d8d4cc;
+  border-radius: 50%;
+  background: transparent;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* LAYOUT */
+
+.profile-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 80px;
+  padding-top: 65px;
+}
+
+.profile-section {
+  padding-bottom: 65px;
+}
+
+.profile-section-label {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 11px;
+  letter-spacing: 0.17em;
+  font-weight: 700;
+  color: #73807f;
+}
+
+.profile-section h2 {
+  margin: 0 0 25px;
+  font-size: 39px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.profile-section h2 em,
+.contact-card h3 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+.profile-section > p {
+  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #626b6c;
+}
+
+/* SERVIÇOS */
+
+.profile-services {
+  border-top: 1px solid #ddd9d1;
+}
+
+.profile-services > div {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  border-bottom: 1px solid #ddd9d1;
+}
+
+.profile-services strong {
+  font-size: 16px;
+}
+
+.profile-services span {
+  color: #697273;
+  font-size: 14px;
+}
+
+/* AVALIAÇÕES */
+
+.profile-reviews-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.profile-reviews-heading > strong {
+  font-size: 20px;
+  color: #b4773c;
+}
+
+.review {
+  padding: 24px 0;
+  border-top: 1px solid #ddd9d1;
+}
+
+.review-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.review-top span {
+  color: #b4773c;
+}
+
+.review p {
+  margin: 0;
+  line-height: 1.6;
+  color: #626b6c;
+}
+
+/* SIDEBAR */
+
+.profile-sidebar {
+  position: relative;
+}
+
+.contact-card {
+  position: sticky;
+  top: 30px;
+  background: #17201f;
+  color: white;
+  border-radius: 28px;
+  padding: 35px;
+}
+
+.contact-card .profile-section-label {
+  color: #aab9b6;
+}
+
+.contact-card h3 {
+  margin: 0 0 30px;
+  font-size: 35px;
+  line-height: 1.05;
+  letter-spacing: -0.035em;
+}
+
+.contact-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 28px;
+}
+
+.contact-price strong {
+  font-size: 28px;
+}
+
+.contact-price span {
+  color: #aab2b1;
+}
+
+.contact-button {
+  width: 100%;
+  border: none;
+  background: #f5f2eb;
+  color: #17201f;
+  padding: 17px 20px;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-button span {
+  margin-left: 8px;
+}
+
+.contact-card p {
+  margin: 18px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #aab2b1;
+}
+
+/* MOBILE */
+
+@media (max-width: 800px) {
+
+  .profile-header {
+    padding: 25px 22px;
+  }
+
+  .profile-header .auth-logo {
+    font-size: 34px;
+  }
+
+  .professional-profile-content {
+    padding: 35px 22px 70px;
+  }
+
+  .profile-intro {
+    align-items: flex-start;
+  }
+
+  .profile-avatar-large {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+  }
+
+  .profile-intro h1 {
+    font-size: 34px;
+  }
+
+  .profile-favorite {
+    width: 42px;
+    height: 42px;
+  }
+
+  .profile-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .profile-section h2 {
+    font-size: 32px;
+  }
+
+  .profile-sidebar {
+    order: -1;
+  }
+
+  .contact-card {
+    position: static;
+  }
+
+  .profile-services > div {
+    gap: 20px;
+  }
+}
+.request-service-button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 16px 20px;
+  border: 1px solid #171719;
+  border-radius: 999px;
+  background: transparent;
+  color: #171719;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.2s ease;
+}
+
+.request-service-button:hover {
+  background: #171719;
+  color: white;
+}
+
+.request-service-button span {
+  font-size: 18px;
+}

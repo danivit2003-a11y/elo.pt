@@ -1,0 +1,468 @@
+.public-profile-page {
+  min-height: 100vh;
+  background: #f7f6f2;
+  color: #16131b;
+  font-family: var(--sans, system-ui, sans-serif);
+}
+
+
+/* HEADER */
+
+.public-profile-header {
+  height: 80px;
+  padding: 0 42px;
+  background: #fff;
+  border-bottom: 1px solid #e5e2dc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.public-profile-header-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.public-profile-logo {
+  text-decoration: none;
+  color: #16131b;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+
+.public-profile-logo span {
+  color: #aa3bff;
+}
+
+.public-profile-dashboard-link {
+  text-decoration: none;
+  color: #5f5865;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.public-profile-dashboard-link:hover {
+  color: #16131b;
+}
+
+
+/* MAIN */
+
+.public-profile-main {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 55px 30px 80px;
+  box-sizing: border-box;
+}
+
+
+/* HERO */
+
+.public-profile-hero {
+  background: #fff;
+  border: 1px solid #e4e0db;
+  border-radius: 20px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 22px;
+}
+
+.public-profile-avatar {
+  width: 105px;
+  height: 105px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #e9d8f3;
+  color: #6f258e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.public-profile-hero-info {
+  flex: 1;
+}
+
+.public-profile-label,
+.public-profile-section-label {
+  display: block;
+  color: #938c99;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.public-profile-hero h1 {
+  margin: 7px 0 4px;
+  font-size: 38px;
+  font-weight: 500;
+  letter-spacing: -1.4px;
+}
+
+.public-profile-location {
+  margin: 0;
+  color: #77717f;
+  font-size: 14px;
+}
+
+.public-profile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.public-profile-tags span {
+  padding: 7px 11px;
+  background: #f3ebf7;
+  color: #6f258e;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.public-profile-hero-action {
+  flex-shrink: 0;
+}
+
+
+/* BUTTON */
+
+.contact-profile-button,
+.public-profile-button {
+  border: none;
+  background: #17131b;
+  color: #fff;
+  border-radius: 9px;
+  padding: 13px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.contact-profile-button:hover,
+.public-profile-button:hover {
+  background: #2b2530;
+  transform: translateY(-1px);
+}
+
+
+/* CONTENT */
+
+.public-profile-content {
+  display: grid;
+  grid-template-columns: 1.55fr 0.8fr;
+  gap: 22px;
+}
+
+.public-profile-left {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.public-profile-card,
+.public-contact-card,
+.public-price-card {
+  background: #fff;
+  border: 1px solid #e4e0db;
+  border-radius: 18px;
+  padding: 28px;
+}
+
+.public-profile-card h2,
+.public-contact-card h2 {
+  margin: 7px 0 20px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.public-profile-description {
+  color: #625b66;
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 0;
+  white-space: pre-line;
+}
+
+
+/* SERVICE */
+
+.public-service {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeae6;
+}
+
+.public-service-icon {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  background: #f3ebf7;
+  color: #8733aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.public-service-info {
+  flex: 1;
+}
+
+.public-service-info strong {
+  display: block;
+  font-size: 14px;
+  color: #28232d;
+  margin-bottom: 4px;
+}
+
+.public-service-info span {
+  display: block;
+  color: #948e97;
+  font-size: 11px;
+}
+
+.public-service-price {
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+
+/* EXPERIENCE */
+
+.experience-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-top: 18px;
+  border-top: 1px solid #eeeae6;
+}
+
+.experience-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #edf7ee;
+  color: #397343;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.experience-item strong,
+.experience-item span {
+  display: block;
+}
+
+.experience-item strong {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.experience-item span {
+  color: #918a94;
+  font-size: 11px;
+}
+
+
+/* RIGHT */
+
+.public-profile-right {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.availability-list {
+  border-top: 1px solid #eeeae6;
+}
+
+.availability-item {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eeeae6;
+}
+
+.availability-item > span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #edf7ee;
+  color: #397343;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.availability-item strong,
+.availability-item small {
+  display: block;
+}
+
+.availability-item strong {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.availability-item small {
+  color: #918a94;
+  font-size: 10px;
+}
+
+
+/* PRICE */
+
+.public-price-card {
+  background: #17131b;
+  color: #fff;
+}
+
+.public-price-card .public-profile-section-label {
+  color: #aaa2ad;
+}
+
+.price-value {
+  margin: 12px 0 22px;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.price-value small {
+  color: #aaa2ad;
+  font-size: 12px;
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.contact-profile-button.full {
+  width: 100%;
+  justify-content: center;
+  background: #fff;
+  color: #17131b;
+}
+
+.contact-profile-button.full:hover {
+  background: #f1eeee;
+}
+
+
+/* EMPTY */
+
+.public-profile-empty {
+  max-width: 650px;
+  margin: 100px auto;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.public-profile-empty h1 {
+  margin: 12px 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.public-profile-empty p {
+  color: #77717f;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+  .public-profile-header {
+    padding: 0 20px;
+  }
+
+  .public-profile-dashboard-link {
+    display: none;
+  }
+
+  .public-profile-main {
+    padding: 30px 18px 50px;
+  }
+
+  .public-profile-hero {
+    padding: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .public-profile-avatar {
+    width: 85px;
+    height: 85px;
+    font-size: 30px;
+  }
+
+  .public-profile-hero h1 {
+    font-size: 32px;
+  }
+
+  .public-profile-hero-action {
+    width: 100%;
+  }
+
+  .contact-profile-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .public-profile-content {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .public-profile-header {
+    height: 70px;
+  }
+
+  .public-profile-logo {
+    font-size: 27px;
+  }
+
+  .public-profile-hero {
+    border-radius: 16px;
+  }
+
+  .public-profile-card,
+  .public-contact-card,
+  .public-price-card {
+    padding: 22px;
+  }
+
+  .public-service {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .public-service-price {
+    margin-left: 60px;
+  }
+
+}

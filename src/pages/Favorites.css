@@ -1,0 +1,150 @@
+.favorites-page {
+  min-height: 100vh;
+  background: #f7f6f2;
+  color: #16131b;
+  font-family: var(--sans, system-ui, sans-serif);
+}
+
+.favorites-header {
+  min-height: 80px;
+  padding: 18px 32px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #fff;
+  border-bottom: 1px solid #e5e2dc;
+}
+
+.favorites-header-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.favorites-logo {
+  text-decoration: none;
+  color: #16131b;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+
+.favorites-logo span {
+  color: #aa3bff;
+}
+
+.favorites-title {
+  font-size: 14px;
+  color: #77717f;
+}
+
+.favorites-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 30px;
+}
+
+.favorites-label {
+  display: block;
+  color: #938c99;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 12px;
+}
+
+.favorites-main h1 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.05;
+  letter-spacing: -1.8px;
+  font-weight: 500;
+}
+
+.favorites-main h1 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #aa3bff;
+}
+
+.favorites-intro {
+  max-width: 500px;
+  margin: 18px 0 45px;
+  color: #77717f;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.favorites-empty {
+  background: #fff;
+  border: 1px solid #e4e0db;
+  border-radius: 18px;
+  padding: 60px 30px;
+  text-align: center;
+  max-width: 700px;
+}
+
+.favorites-empty-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: #f3ebf7;
+  color: #8e35b3;
+  font-size: 28px;
+}
+
+.favorites-empty h2 {
+  margin: 0 0 10px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.favorites-empty p {
+  max-width: 480px;
+  margin: 0 auto 25px;
+  color: #85808a;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.favorites-empty button {
+  border: none;
+  border-radius: 9px;
+  padding: 13px 20px;
+
+  background: #17131b;
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.favorites-empty button:hover {
+  background: #2b2530;
+}
+
+@media (max-width: 600px) {
+
+  .favorites-header {
+    padding: 15px 20px;
+  }
+
+  .favorites-main {
+    padding: 45px 20px;
+  }
+
+  .favorites-main h1 {
+    font-size: 38px;
+  }
+
+}
