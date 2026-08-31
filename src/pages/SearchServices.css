@@ -82,6 +82,28 @@
   font-weight: 700;
 }
 
+/* =========================
+   NAVBAR — SETA + ELO
+   ========================= */
+
+   .client-navbar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .client-navbar .back-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  
+  .client-navbar .logo {
+    display: flex;
+    align-items: center;
+    margin-left: 22px;
+  }
+
 
 /* =========================
    MAIN

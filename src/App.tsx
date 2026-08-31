@@ -15,6 +15,8 @@ import PublicProfessionalProfile from './pages/PublicProfessionalProfile';
 import ServiceRequestPage from './pages/ServiceRequestPage';
 import ContactProfessional from './pages/ContactProfessional';
 import Favorites from './pages/Favorites';
+import Help from './pages/Help';
+import HelpContact from './pages/HelpContact';
 
 const categories = [
   { name: 'Explicações', icon: '▱' },
@@ -93,20 +95,15 @@ function App() {
   }
 
   if (path === '/favorites') {
-    return (
-      <div style={{
-        padding: '100px',
-        fontSize: '40px',
-        background: 'white',
-        minHeight: '100vh'
-      }}>
-        FAVORITOS ESTÁ A FUNCIONAR ❤️
-      </div>
-    );
+    return <Favorites />;
+  }
+  
+  if (path === '/help') {
+    return <Help />;
   }
 
-  if (path === '/favorites') {
-    return <Favorites />;
+  if (path === '/help-contact') {
+    return <HelpContact />;
   }
 
   return (
@@ -731,7 +728,7 @@ function App() {
 
               <strong>Plataforma</strong>
 
-              <a href="#servicos">
+              <a href="#">
                 Procurar serviços
               </a>
 
@@ -753,13 +750,13 @@ function App() {
 
               <strong>Ajuda</strong>
 
-              <a href="#">
-                Centro de ajuda
-              </a>
+              <a href="/help">
+  Centro de ajuda
+</a>
 
-              <a href="#">
-                Contactos
-              </a>
+<a href="/help-contact">
+  Contactos
+</a>
 
               <a href="#">
                 Segurança
